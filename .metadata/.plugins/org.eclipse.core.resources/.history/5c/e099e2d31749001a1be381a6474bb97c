@@ -1,0 +1,59 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Driver {
+
+	private String License;
+	private String Name;
+	private Integer Age;
+	private String Address;
+	private DateFormat dob = new SimpleDateFormat("dd/MM/yy");
+
+	public String getLicense() {
+		return License;
+	}
+
+	public void setLicense(String license) {
+		License = license;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public Integer getAge() {
+		return Age;
+	}
+
+	public void setAge(Integer age) {
+		Age = age;
+	}
+
+	public String getAddress() {
+		return Address;
+	}
+
+	public void setAddress(String address) {
+		Address = address;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	@Override
+	public String toString() {
+		return "Driver [License=" + License + ", Name=" + Name + ", Age=" + Age + ", Address=" + Address + ", dob="
+				+ dob + "]";
+	}
+
+}

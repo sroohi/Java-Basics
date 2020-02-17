@@ -1,0 +1,9 @@
+package SubcribtionPack;
+
+public class OnlineSupportTeam {
+	public void monthlyPayment(Subscribers s1) {
+		Subscribers s = new Subscribers();
+		System.out.println(s.toString());
+	}
+
+}

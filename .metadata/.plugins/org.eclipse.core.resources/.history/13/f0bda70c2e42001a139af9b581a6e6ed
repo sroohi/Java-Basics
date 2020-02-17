@@ -1,0 +1,14 @@
+package polyMorphism;
+
+public class MacBookAir extends MacBookPro {
+	@Override
+	void start() {
+		System.out.println("MacBookAir Start");
+	}
+
+	@Override
+	void shutdown() {
+		System.out.println("MacBookAir Shutdown");
+	}
+
+}

@@ -1,0 +1,14 @@
+package coursesBasic;
+
+public class SubString {
+	public static void main(String[] args) {
+		String a = "Hello I'm shawn";
+		System.out.println(a.substring(6, 9));
+		System.out.println(a.substring(0));
+
+		// String s = "Never Give Up";
+		// System.out.println(s.substring(0, 5));// never
+		// System.out.println(s.substring(6));// give up
+	}
+
+}

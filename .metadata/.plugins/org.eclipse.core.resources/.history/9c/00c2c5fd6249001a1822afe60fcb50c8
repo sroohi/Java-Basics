@@ -1,0 +1,56 @@
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+public class DMV {
+
+	public static Map<String, Driver> drivers = new HashMap<String, Driver>();
+
+	public static void fillUpDrivers() {
+		Driver d = new Driver();
+		d.setAddress("852 sew st");
+		d.setAge(56);
+		d.setLicense("655412589");
+		d.setName("Ahmad");
+
+		Driver d1 = new Driver();
+		d1.setAddress("15 west africa");
+		d1.setAge(60);
+		d1.setLicense("951420");
+		d1.setName("Mia");
+
+		Driver d2 = new Driver();
+		d2.setAddress("1414 South Decota");
+		d2.setAge(25);
+		d2.setLicense("956413");
+		d2.setName("Moe");
+
+		Driver d3 = new Driver();
+		d3.setAddress("420 sew st");
+		d3.setAge(36);
+		d3.setLicense("951265");
+		d3.setName("Mr.Been");
+		;
+
+		Driver d4 = new Driver();
+		d4.setAddress("9520 H st");
+		d4.setAge(42);
+		d4.setLicense("123456");
+		d4.setName("Bruce");
+
+		Driver d5 = new Driver();
+		d5.setAddress("1500 cornerside blvd");
+		d5.setAge(45);
+		d5.setLicense("951620");
+		d5.setName("Luce");
+
+		drivers.put("655412589", d);
+		drivers.put("951420", d1);
+		drivers.put("956413", d2);
+		drivers.put("951265", d3);
+		drivers.put("123456", d4);
+		drivers.put("951620", d5);
+
+	}
+
+}

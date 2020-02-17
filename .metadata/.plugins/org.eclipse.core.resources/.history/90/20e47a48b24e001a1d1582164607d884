@@ -1,0 +1,18 @@
+package com.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.customer.info.Customer;
+import com.order.info.OrderInfo;
+
+public class MainApp {
+	public static void main(String[] args) {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("app-context.xml");
+
+		Customer c = (Customer) ctx.getBean("customer");
+		OrderInfo oi= ctx.getBean("order")
+
+	}
+
+}

@@ -1,0 +1,50 @@
+package VehicleInventory;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UpcomingVehicle {
+	private InStockVehicle isv;
+	private String estimatedTime;
+	private Integer count;
+	public List<InStockVehicle> isv1;
+
+	public List<InStockVehicle> getIsv1() {
+		return isv1;
+	}
+
+	public void setIsv1(List<InStockVehicle> isv1) {
+		this.isv1 = isv1;
+	}
+
+	public InStockVehicle getIsv() {
+		return isv;
+	}
+
+	public void setIsv(InStockVehicle isv) {
+		this.isv = isv;
+	}
+
+	public String getEstimatedTime() {
+		return estimatedTime;
+	}
+
+	public void setEstimatedTime(String estimatedTime) {
+		this.estimatedTime = estimatedTime;
+	}
+
+	public Integer getCount() {
+		return count;
+	}
+
+	public void setCount(Integer count) {
+		this.count = count;
+	}
+
+	@Override
+	public String toString() {
+		return "UpcomingVehicle [isv=" + isv + ", estimatedTime=" + estimatedTime + ", count=" + count + ", isv1="
+				+ isv1 + "]";
+	}
+
+}

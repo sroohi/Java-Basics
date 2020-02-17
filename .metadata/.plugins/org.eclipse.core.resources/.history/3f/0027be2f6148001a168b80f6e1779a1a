@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class Vehicle {
+	ArrayList<String> make = new ArrayList<String>();
+	make.add
+
+}

@@ -1,0 +1,27 @@
+package collectionPackage;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample2 {
+	public static void main(String[] args) {
+
+		Map<Integer, String> m = new HashMap<Integer, String>();
+		m.put(1, " Shawn");
+		m.put(5, " Roohi");
+		m.put(12, " Shawn Roohi");
+		m.put(11, " SHAWN ROOHI");
+
+		m.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
+		System.out.println("-----------");
+		System.out.println("REVERSING THE LIST");
+		System.out.println("-----------");
+		m.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.reverseOrder())).forEach(System.out::println);
+		System.out.println("-----------");
+		System.out.println("COMPARING BY VALUE");
+		System.out.println("-----------");
+		m.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+	}
+
+}

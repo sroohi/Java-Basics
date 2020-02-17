@@ -1,0 +1,17 @@
+
+public class Test {
+	public static void main(String[] args) {
+
+		DMV.fillUpDrivers();
+
+		DriverFinder df = new DriverFinder();
+
+		Driver driver = df.DriverByLicense("951420");
+
+		System.out.println(driver.toString());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package stringBufferAndBuilder;
+
+public class StringBuilderExample {
+
+	public static void main(String[] args) {
+		StringBuilder str = new StringBuilder("Youtube");
+		str.append(".com");
+		str.insert(0, "www.");
+		System.out.println("Please Visit -->" + str + "<--");
+
+		System.out.println("- The Length Is  :" + str.length());
+		System.out.println("- Capacity  : " + str.capacity());
+		System.out.println("The Character at 5th index is  : " + str.charAt(5));
+		System.out.println("Not " + str.substring(7));
+		System.out.println(str.ensureCapacity(9);(15));
+
+	}
+
+}

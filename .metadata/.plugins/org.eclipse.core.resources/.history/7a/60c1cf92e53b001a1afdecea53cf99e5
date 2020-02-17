@@ -1,0 +1,18 @@
+package collectionPackage;
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+	public static void main(String[] args) {
+
+		ArrayList<String> a1 = new ArrayList<String>();
+		a1.add("Shawn");
+		a1.add("Roohi");
+		a1.add("Born in");
+		a1.add("Iran");
+		a1.add("Live in");
+		a1.add("USA");
+		System.out.println(a1);
+	}
+
+}

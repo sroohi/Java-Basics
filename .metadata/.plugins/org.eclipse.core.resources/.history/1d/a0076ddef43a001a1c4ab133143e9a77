@@ -1,0 +1,24 @@
+package threadsPackage;
+
+public class DaemonThreadExample extends Thread {
+	public void run() {
+		if (Thread.currentThread().isDaemon()) {
+			System.out.println("This is a Daemon Thread");
+		} else {
+			System.out.println("This is a User Thread");
+		}
+	}
+
+	public static void main(String[] args) {
+		DaemonThreadExample s1 = new DaemonThreadExample();
+		DaemonThreadExample s2 = new DaemonThreadExample();
+		DaemonThreadExample s3 = new DaemonThreadExample();
+		s1.setDaemon(true);
+		s2.setDaemon(false);
+		s1.start();
+		s2.start();
+		s3.start();
+
+	}
+
+}

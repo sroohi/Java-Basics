@@ -1,0 +1,6 @@
+package BussinessPack;
+
+public class Store {
+	private String storeNo
+
+}

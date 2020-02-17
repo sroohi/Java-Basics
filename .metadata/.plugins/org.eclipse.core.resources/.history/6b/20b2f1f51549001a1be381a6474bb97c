@@ -1,0 +1,17 @@
+import java.util.Map;
+
+public class DMV {
+
+	private static Map<String, Driver> drivers;
+	Driver d = new Driver();
+	Driver d1 = new Driver();
+	Driver d2 = new Driver();
+	Driver d3 = new Driver();
+	Driver d4 = new Driver();
+	Driver d5 = new Driver();
+
+	public static void fillUpDrivers() {
+
+	}
+
+}

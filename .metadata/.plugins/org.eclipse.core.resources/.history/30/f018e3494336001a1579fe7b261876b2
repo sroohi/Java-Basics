@@ -1,0 +1,16 @@
+package stringPackage;
+
+public class StringCharAtExample {
+
+	public static void main(String[] args) {
+
+		String name = "Java Programming";
+		char a = name.charAt(8);
+
+		// String name = "Shawn Roohi";
+		// char ch = name.charAt(3);
+		// System.out.println(ch);// "w" is the 3d index
+
+	}
+
+}

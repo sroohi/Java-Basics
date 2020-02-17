@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class DriverFinder {
+	public Driver DriverByLicense(String License) {
+		return DMV.drivers.get(License);
+
+	}
+
+	public List<Driver> getAllDrivers() {
+		List<Driver> dlist = new ArrayList<Driver>();
+		dlist.addAll(DMV.drivers.values();
+}
+}

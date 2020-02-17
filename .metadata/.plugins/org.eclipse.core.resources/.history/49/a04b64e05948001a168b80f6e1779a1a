@@ -1,0 +1,15 @@
+package FirstSession;
+
+public class UberService {
+	public void driveUber(Driver d) {
+		Vehicle v = new Vehicle();
+		v.setMake("Chevy");
+		v.setModel("Impala");
+
+		Driver d1 = new Driver();
+		d1.setDl(852254574);
+		d1.setName("Shawn");
+
+	}
+
+}

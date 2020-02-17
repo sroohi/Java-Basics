@@ -1,0 +1,19 @@
+package com.abc.helper;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class UpdateMainApp {
+	public static void main(String[] args) throws Exception {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/dmv_1", "root",
+				"021051Sr!");
+
+		// creating a statement
+		Statement stmt = con.createStatement();
+
+		String sql = "update drivers set address = '5848494 skjhshf' where id=2020";
+		stmt.executeUpdate(sql);
+	}
+}

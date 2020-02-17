@@ -1,0 +1,26 @@
+package collectionPackage;
+
+import java.util.TreeSet;
+
+public class TreeSetExample {
+	public static void main(String[] args) {
+		TreeSet<String> ab = new TreeSet<String>();
+		try {
+			
+			ab.add(null);
+			
+		} catch (Exception e) {
+			System.out.println("Exception Handled");
+		}
+		ab.add("Shawn");
+		ab.add("Class");
+		ab.add("Core Java");
+		ab.add("Student");
+
+		for (String obj : ab) {
+			System.out.println(obj);
+		}
+
+	}
+
+}

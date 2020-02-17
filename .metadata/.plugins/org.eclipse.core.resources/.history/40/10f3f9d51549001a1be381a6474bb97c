@@ -1,0 +1,21 @@
+import java.util.Map;
+
+public class DMV {
+
+	private static Map<String, Driver> drivers;
+
+	public static void fillUpDrivers() {
+		String experience;
+		Integer years;
+		Float commission;
+		Boolean refferal;
+		Integer driverId;
+
+	}
+	public static void main(String[] args) {
+		Driver value;
+		drivers.put("1050", value);
+	}
+	
+
+}

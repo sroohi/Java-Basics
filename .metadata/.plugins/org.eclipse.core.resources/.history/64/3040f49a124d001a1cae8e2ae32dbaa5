@@ -1,0 +1,11 @@
+package com.abc.tables;
+
+import java.sql.Connection;
+
+public class DbUtility {
+	public static Connection getConnection() {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+
+	}
+
+}

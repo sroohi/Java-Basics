@@ -1,0 +1,13 @@
+package stringPackage;
+
+public class StringConcatExample {
+	public static void main(String args[]) {
+
+		String a = "The weather";
+		a.concat(" is nice!");
+		System.out.println(a);
+		a = a.concat(" is nice! I Like It...");
+		System.out.println(a);
+	}
+
+}

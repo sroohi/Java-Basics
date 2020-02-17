@@ -1,0 +1,15 @@
+package finalConcepts;
+
+public class A {
+	final static float pi = 3.14f;
+
+	public void displayValue() {
+		System.out.println(A.pi);
+	}
+
+	public static void main(String[] args) {
+		System.out.println(A.pi);
+
+	}
+
+}

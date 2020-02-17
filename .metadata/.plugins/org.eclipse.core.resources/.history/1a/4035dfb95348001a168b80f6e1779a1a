@@ -1,0 +1,10 @@
+package FirstSession;
+
+public class AdminstrationServices {
+	public void admit(Student name) {
+		name.toString();
+		System.out.println(name);
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.abc.tables;
+
+import java.sql.Connection;
+
+public class JoinMainApp {
+
+}

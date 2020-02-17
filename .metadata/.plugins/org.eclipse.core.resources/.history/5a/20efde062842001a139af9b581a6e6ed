@@ -1,0 +1,16 @@
+package Interfaces;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		HPNoteBook hpNoteBook = new HPNoteBook();
+		hpNoteBook.click();
+		hpNoteBook.scroll();
+
+		DELLNoteBook dellNoteBook = new DELLNoteBook();
+		dellNoteBook.click();
+		dellNoteBook.scroll();
+
+	}
+
+}

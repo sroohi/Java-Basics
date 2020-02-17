@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello T</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <script>
+       var x=100;
+       var y=900;
+       var result=x+y;
+       console.log("Result is  = "+result);
+       
+       function clearMessage(){
+    	   document.getElementById("emessage").innerHTML="";
+       }
+       
+       function checkName(){
+    	   var inputObj=document.getElementById("pname");
+    	   var pname=inputObj.value;
+    	   var spanObj=document.getElementById("emessage");
+    	   if(pname.length==0){
+    		   spanObj.innerHTML="Sorry name cannot be empty!!";
+    		   return;
+    	   }
+    	   spanObj.innerHTML="Hello Your name is Mr. "+pname;
+       }
+   
+  </script>
+  
+</head>
+<body>
+  <header style="background-color: yellow;height: 30px;">
+    Hello we are learning JavaScript!!
+  </header>
+
+   <div class="container">
+     <img src="img/signup.png">
+      <hr/>
+      <label>Enter Name</label>
+      <input type="text" id="pname"  name="pname" class="form-control" style="width: 50%" onkeydown="clearMessage();">
+      
+       <span id="emessage" style="color:red;font-size: 18px;font-weight: bold;">..</span>
+       <br/> <br/>
+      <button type="button" class="btn btn-primary" onclick="checkName();">Welcome</button>
+   </div>
+
+  
+  
+</body>
+</html>

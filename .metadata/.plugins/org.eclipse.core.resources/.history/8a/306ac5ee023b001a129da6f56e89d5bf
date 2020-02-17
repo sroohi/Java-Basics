@@ -1,0 +1,29 @@
+package threadsPackage;
+
+public class Employee {
+	int salary = 45000;
+
+	synchronized void deposit(int salary) {
+		System.out.println("DEPOSIT THE SALARY" + salary);
+		if (this.salary < salary) {
+			System.out.println("Wrong in depositing salary");
+			try {
+				wait();
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+		}
+		this.salary -= salary;
+		System.out.println("DEPOSIT COMPELETED!!");
+	}
+
+	synchronized void withdraw(int salary) {
+		System.out.println("WITHDRAWING FUNDS...");
+
+		this.salary -= salary;
+		System.out.println("WITHDRAW COMPELETED!!");
+		notify();
+
+	}
+
+}

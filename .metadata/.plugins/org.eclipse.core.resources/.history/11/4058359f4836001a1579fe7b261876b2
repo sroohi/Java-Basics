@@ -1,0 +1,27 @@
+package stringPackage;
+
+public class StringConcatExample {
+	public static void main(String args[]) {
+
+		String a = "The weather";
+		a.concat(" is nice!");
+		System.out.println(a);
+		a = a.concat(" is nice! I Like It...");
+		System.out.println(a);
+
+	}
+
+	public static void main2(String args[]) {
+		String abc1 = "The";
+		String abc2 = " Weather";
+		String abc3 = " Is";
+		String abc4 = " Nice!!";
+		String abc5 = abc1.concat(abc2);
+		String abc6 = abc2.concat(abc3);
+		String abc7 = abc3.concat(abc4);
+		System.out.println(abc5);
+		System.out.println("\n" + abc6);
+		System.out.println("\n" + abc7);
+	}
+
+}

@@ -1,0 +1,17 @@
+package excaptionHandlingPackage;
+
+import java.io.IOException;
+
+class Shawn {
+	void method() throws IOException {
+		System.out.println("D.O PERFORMED!!!");
+	}
+}
+
+public class ThrowsCase2Example {
+	public static void main(String[] args) throws IOException {
+		Shawn r = new Shawn();
+		r.method();
+		System.out.println("Rest of the flow...");
+	}
+}

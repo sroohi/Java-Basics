@@ -1,0 +1,13 @@
+
+public class NonStaticMembersDemp {
+
+	int num;
+
+	NonStaticMembersDemp() {
+		System.out.println("Inside the constructor");
+	}
+
+	{
+		System.out.println("Inside the non static block");
+	}
+}

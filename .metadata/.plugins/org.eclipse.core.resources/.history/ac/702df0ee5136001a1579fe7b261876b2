@@ -1,0 +1,27 @@
+package stringPackage;
+
+public class StringFormatExample {
+
+	public static void main(String[] args) {
+		String product = "P-DS14";
+		String sf1 = String.format("Product :%s", product);
+		String sf2 = String.format("Price :$%s", 499.99);
+		String sf3 = String.format("Sale Price :$%s", 399.99);
+
+		System.out.println(sf1);
+		System.out.println(sf2);
+		System.out.println(sf3);
+		//
+		//
+
+		String model = String.format("%d", 145);// integer
+		String company = String.format("%s", "Mr.MP llc");// string
+		String price = String.format("%f", 15999.99);// float
+		String date = String.format("%s", "01 - 01 - 2020");// date
+		System.out.println("* " + model);
+		System.out.println("** " + company);
+		System.out.println("*** " + price);
+		System.out.println("*-*" + date + "*-*");
+	}
+
+}

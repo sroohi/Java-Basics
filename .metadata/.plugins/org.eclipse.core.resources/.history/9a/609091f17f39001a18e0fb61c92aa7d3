@@ -1,0 +1,77 @@
+package coursesBasic;
+
+public class OperatorExample {
+	public static void main(String[] args) {
+		// Unary
+		int a = 10;
+		int b = 10;
+		boolean c = true;
+		boolean d = false;
+		int f = -10;
+		System.out.println("--------------");
+		System.out.println("UNARY OPERATORS");
+		System.out.println(a++);// 10+1
+		System.out.println(++a);// 10+2
+		System.out.println(a--);// 12-1
+		System.out.println(--a);// 10-0
+		System.out.println(a++ + ++a);// 10+(10+2)
+		System.out.println(b++ + b++);// 10+(10+1)
+		System.out.println(~a);// minus of total positive,which starts from"0"
+		System.out.println(~f);// positive of total minus which starts from "0"
+		System.out.println(!c);// opposite of boolean value
+		System.out.println(!d);// opposite of boolean value
+		System.out.println("--------------");
+		System.out.println("ARITHMETIC OPERATORS");
+		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a / b);
+		System.out.println(a % b);
+		System.out.println(10 * 10 / 4 + 3 - 9);
+		System.out.println("-------------");
+		System.out.println("LEFT SHIFT AND RIGHT SHIFT OPERATORS");
+		System.out.println(10 << 2);// 10*2^2
+		System.out.println(10 << 3);// 10*2^3
+		System.out.println(10 << 4);// 10*2^4
+		System.out.println(10 >> 2);// 10/2^2
+		System.out.println(10 >> 3);// 10/2^3
+		System.out.println(10 >> 4);// 10/2^4
+		System.out.println("--------------");
+		System.out.println(">>vs>>>");
+		// for positive >> and >>> works the same
+		System.out.println(10 >> 2);
+		System.out.println(10 >>> 2);
+		// for negative >>> changes parity bit(MSB) to "0"
+		System.out.println(-10 >> 2);
+		System.out.println(-10 >>> 2);
+		System.out.println("--------------");
+		System.out.println("LOGICAL && BITWISE &");
+		// & & doesn't check second condition if the first one is false
+		// & always checks both conditions
+		System.out.println(a < b && a < f);// false && true = false
+		System.out.println(a < b & a < f);// false&true=False
+		System.out.println(a < b && a++ > f);
+		System.out.println(a);
+		System.out.println(a > b & a++ > f);
+		System.out.println(a);
+		System.out.println("-------------");
+		System.out.println("LOGICAL || BITWISE | ");
+		// || checks the second condition if the first one is true
+		// | always checks both conditions
+		System.out.println(a > b || a < f);
+		System.out.println(b > f | a < f);
+		System.out.println("-------------");
+		System.out.println("TERNARY OPERATORS");
+		// it's used a lot in if-then-else statement
+		// it's the only conditional operator which takes three operands
+		int a1 = 25;
+		int b1 = 14;
+		int min = (a < b) ? a : b;
+		System.out.println(min);
+		int a2 = 5;
+		int b2 = 3;
+		int min1 = (a < b) ? a : b;
+
+	}
+
+}

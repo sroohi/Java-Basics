@@ -1,0 +1,6 @@
+package finalConcepts;
+
+public final class A {
+	float pi=3.14f;
+
+}

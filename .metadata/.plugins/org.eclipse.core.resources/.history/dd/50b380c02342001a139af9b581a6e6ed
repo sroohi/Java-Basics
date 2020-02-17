@@ -1,0 +1,10 @@
+package abstraction;
+
+public abstract class BMW {
+	void commonFunc() {
+		System.out.println("Inside commonFunc Method");
+	}
+	abstract void accelerate();
+	
+
+}

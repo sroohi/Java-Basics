@@ -1,0 +1,25 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class DMV {
+
+	private static Map<String, Driver> drivers = new HashMap<String, Driver>();
+
+	public static void fillUpDrivers() {
+		Driver d = new Driver();
+		Driver d1 = new Driver();
+		Driver d2 = new Driver();
+		Driver d3 = new Driver();
+		Driver d4 = new Driver();
+		Driver d5 = new Driver();
+
+		drivers.put("150", d);
+		drivers.put("560", d1);
+		drivers.put("980", d2);
+		drivers.put("963", d3);
+		drivers.put("513", d4);
+		drivers.put("447", d5);
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package excaptionHandlingPackage;
+
+public class ExceptionPropagationExample1 {
+	void s() {
+		int a = 0 / 14;
+	}
+
+	void s1() {
+		s();
+	}
+
+	void s2() {
+		s1();
+	}
+
+	void s3() {
+		try {
+			s2();
+		} catch (Exception e) {
+			System.out.println("EXCEPTION HAS BEEN HANDLED!!!");
+		}
+	}
+
+	public static void main(String[] args) {
+		ExceptionPropagationExample1 obj = new ExceptionPropagationExample1();
+		obj.s3();
+		System.out.println("CONTINUE...");
+	}
+
+}

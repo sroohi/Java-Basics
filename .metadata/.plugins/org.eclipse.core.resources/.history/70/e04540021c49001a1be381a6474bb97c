@@ -1,0 +1,8 @@
+
+public class DriverFinder {
+	public Driver DriverByLicense(String id) {
+		return DMV.drivers.get(id);
+
+	}
+
+}

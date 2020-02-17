@@ -1,0 +1,9 @@
+package VehicleInventory;
+
+public class InventoryManagement {
+	public void shipping(UpcomingVehicle uv) {
+		System.out.println(uv.toString());
+		for(In)
+	}
+
+}

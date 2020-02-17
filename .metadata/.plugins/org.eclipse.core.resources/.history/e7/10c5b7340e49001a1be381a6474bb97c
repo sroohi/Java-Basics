@@ -1,0 +1,13 @@
+
+public class Test {
+	public static void main(String[] args) {
+		UberService us = new UberService();
+
+		Vehicle v = new Vehicle();
+		v.setColor("Blue");
+		v.setMake("Jeep");
+		v.setModel("Cherokee");
+
+	}
+
+}

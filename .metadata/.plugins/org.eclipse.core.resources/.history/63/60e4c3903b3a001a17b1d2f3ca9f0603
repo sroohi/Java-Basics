@@ -1,0 +1,17 @@
+package threadsPackage;
+
+public class RunnableInterfaceThreadCreation implements Runnable {
+	public void run() {
+		System.out.println("Creating Threads by Implementing Runnable Interface");
+	}
+
+	public static void main(String[] args) {
+		RunnableInterfaceThreadCreation t = new RunnableInterfaceThreadCreation();
+		Thread t1 = new Thread(t);
+		t1.start();
+		System.out.println("Continue...");
+		System.out.println(t1.getName());
+		// you can't personally prioritize the threads
+	}
+
+}

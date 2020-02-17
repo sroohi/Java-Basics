@@ -1,0 +1,11 @@
+
+public class StringEndsWithExample {
+
+	public static void main(String[] args) {
+
+		String str = "News Paper";
+		System.out.println("+ " + str.endsWith("r") + " +");
+		System.out.println("- " + str.endsWith("paper") + " -");
+	}
+
+}

@@ -1,0 +1,34 @@
+package collectionPackage;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class LinkedHashMapExample {
+
+	public static void main(String[] args) {
+		LinkedHashMap<Integer, String> abc = new LinkedHashMap<Integer, String>();
+		System.out.println("*Alphabet*");
+		abc.put(1, "  A");
+		abc.put(2, "  B");
+		abc.put(3, "  C");
+		abc.put(4, "  D");
+		abc.put(5, "  E");
+		abc.put(6, "  F");
+		abc.put(7, "  G");
+		abc.put(8, "  H");
+		abc.put(9, "  I");
+		abc.put(10, "  J");
+		abc.put(11, "  K");
+		abc.put(12, "  L");
+		abc.put(13, "  M");
+		abc.put(14, "  N");
+		abc.put(15, "  O");
+		abc.put(16, "  P");
+
+		for (Map.Entry<Integer, String> a : abc.entrySet()) {
+			System.out.println(a.getKey() + "-->" + a.getValue());
+
+		}
+	}
+
+}

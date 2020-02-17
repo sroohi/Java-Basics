@@ -1,0 +1,9 @@
+
+public class EscapeSeq {
+	public static void main(String[] args) {
+		String a = "Hello I'm Shawn";
+		System.out.println(a);
+
+	}
+
+}

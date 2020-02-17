@@ -1,0 +1,44 @@
+package stringPackage;
+
+import java.util.ArrayList;
+
+public class StringEqualsExample {
+
+	public static void main(String[] args) {
+		String myName = "Shawn";
+		String myFirstName = "Shawn";
+		String myLastName = "Roohi";
+		String myNameCaps = "SHAWN";
+		System.out.println("++ " + myName.equals(myFirstName) + " ++");
+		System.out.println("*- " + myName.equals(myNameCaps) + " -*");
+		System.out.println("xx " + myFirstName.equals(myLastName) + " xx");
+		//
+		//
+		//
+
+		String firstName = "Shawn";
+		String name = "Shawn";
+		String lastName = "roohi";
+		System.out.println("+ " + firstName.equals(name) + " +");
+		if (firstName.equals(lastName)) {
+			System.out.println("Not Equal");
+		} else
+			System.out.println("Are Equal");
+		//
+		//
+		//
+
+		String str1 = "Shawn";
+		ArrayList<String> list = new ArrayList<>();
+		list.add("Roohi");
+		list.add("Shawn");
+		list.add("Shawn ROohi");
+		for (String str : list) {
+			if (str.equals(str1)) {
+				System.out.println("+ " + "Shawn is Here" + " +");
+			}
+		}
+
+	}
+
+}

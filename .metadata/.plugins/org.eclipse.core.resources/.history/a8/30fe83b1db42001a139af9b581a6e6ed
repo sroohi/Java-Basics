@@ -1,0 +1,22 @@
+package ExceptionHandling;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class CheckedException {
+	void readFile() throws FileNotFoundException {
+		FileInputStream fis = new FileInputStream("");
+
+	}
+
+	public static void main(String[] args) {
+		CheckedException ce = new CheckedException();
+		try {
+			ce.readFile();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("No Can Do!!");
+		}
+	}
+
+}

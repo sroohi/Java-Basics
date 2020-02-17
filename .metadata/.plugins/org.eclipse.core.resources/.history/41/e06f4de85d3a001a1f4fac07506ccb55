@@ -1,0 +1,23 @@
+package excaptionHandlingPackage;
+
+import java.io.IOException;
+
+class M {
+	void method() throws IOException {
+		System.out.println("D.O Performed...");
+	}
+}
+
+public class ThrowsCase2Example {
+	public static void main(String[] args) {
+		M m = new M();
+		try {
+			m.method();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Normal Flow...");
+	}
+
+}

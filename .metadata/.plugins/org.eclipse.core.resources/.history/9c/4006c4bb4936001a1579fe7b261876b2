@@ -1,0 +1,37 @@
+package stringPackage;
+
+public class StringConcatExample {
+	public static void main(String args[]) {
+
+		String a = "The weather";
+		a.concat(" is nice!");
+		System.out.println(a);
+		a = a.concat(" is nice! I Like It...");
+		System.out.println(a);
+		//
+		//
+		// Example 2
+		String abc1 = "The";
+		String abc2 = " Weather";
+		String abc3 = " Is";
+		String abc4 = " Nice!!";
+		String abc5 = abc1.concat(abc2);
+		String abc6 = abc3.concat(abc4);
+
+		System.out.println(abc5);
+		System.out.println(abc6);
+		//
+		//
+		// Example 3
+		String example = "The Weather";
+		String exmple = " Is very";
+		String exl = " Nice...";
+		String fin = example.concat("").concat(exmple).concat("").concat(exl);
+		System.out.println(fin);
+		String prefin = example.concat("?!?");
+		System.out.println(prefin);
+		String semifin = exmple.concat(":)");
+		System.out.println(semifin);
+	}
+
+}

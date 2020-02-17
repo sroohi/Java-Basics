@@ -1,0 +1,3 @@
+1581331451257	Extract method 'printPaymentSchedule'
+1581331509135	Extract method 'printMortgage'
+1581376134547	Rename field 'Months_in_year'

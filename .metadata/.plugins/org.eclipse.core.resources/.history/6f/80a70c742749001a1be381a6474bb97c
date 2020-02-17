@@ -1,0 +1,22 @@
+import java.util.Iterator;
+import java.util.List;
+
+public class Test {
+	public static void main(String[] args) {
+
+		DMV.fillUpDrivers();
+
+		DriverFinder df = new DriverFinder();
+
+		Driver driver = df.DriverByLicense("951420");
+
+		List<Driver> d = df.getAllDrivers();
+
+		for (Driver s1 : DMV.drivers.values()) {
+			System.out.println(s1.toString());
+
+		}
+
+	};
+
+}

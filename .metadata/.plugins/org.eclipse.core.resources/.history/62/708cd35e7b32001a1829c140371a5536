@@ -1,0 +1,29 @@
+
+public class StringComparisonExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "My name is Shawn.";
+		String s1 = "My name is Shawn";
+		String s2 = new String("My name is Shawn.");
+		String s3 = "My name iz Shawn";
+
+		String s4 = "Shawn";
+		String s5 = "SHAWN";
+		String s6 = "Shawn";
+
+		System.out.println(s.equals(s1));
+		System.out.println(s.equals(s2));
+		System.out.println(s1.equals(s3));
+		System.out.println(s2.equals(s));
+
+		System.out.println(s4.equals(s5));
+		System.out.println(s4.equalsIgnoreCase(s5));
+		System.out.println(s4.equalsIgnoreCase(s6));
+
+		System.out.println(s4 == s5);
+		
+
+	}
+
+}

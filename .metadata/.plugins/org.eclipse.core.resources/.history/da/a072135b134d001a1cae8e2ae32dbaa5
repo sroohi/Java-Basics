@@ -1,0 +1,23 @@
+package com.abc.tables;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.abc.helper.DbUtility;
+
+public class JoinMainApp {
+	
+	public static void main(String[] args) throws Exception {
+		
+		Connection con = DbUtility.getConnection();
+		Statement stmt = con.createStatement();
+
+		String sql = "select * from drivers";
+		ResultSet rs = stmt.executeQuery(sql);
+
+	}
+
+	
+
+}

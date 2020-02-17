@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="grads" class="com.school.graduation.Graduation">
+		<property name="studentName" value="Shawn Roohi"></property>
+		<property name="studentId" value="805402"></property>
+		<property name="isApproved" value="ture"></property>
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+</beans>

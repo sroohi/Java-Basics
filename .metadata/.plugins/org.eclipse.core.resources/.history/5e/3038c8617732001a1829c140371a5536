@@ -1,0 +1,11 @@
+
+public class ImmutableStringExample {
+
+	public static void main(String[] args) {
+
+		String s = "wus good";
+		s = s.concat(" Virginia");
+		System.out.println(s);
+	}
+
+}

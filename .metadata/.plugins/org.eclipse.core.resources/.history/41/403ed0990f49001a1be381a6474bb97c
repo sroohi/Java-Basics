@@ -1,0 +1,39 @@
+package VehicleInventory;
+
+import java.util.ArrayList;
+
+public class UpcomingVehicle {
+	private InStockVehicle isv;
+	private ArrayList<String> models = new ArrayList<String>();
+	private ArrayList<Integer> count = new ArrayList<Integer>();
+
+	public InStockVehicle getIsv() {
+		return isv;
+	}
+
+	public void setIsv(InStockVehicle isv) {
+		this.isv = isv;
+	}
+
+	public ArrayList<String> getModels() {
+		return models;
+	}
+
+	public void setModels(ArrayList<String> models) {
+		this.models = models;
+	}
+
+	public ArrayList<Integer> getCount() {
+		return count;
+	}
+
+	public void setCount(ArrayList<Integer> count) {
+		this.count = count;
+	}
+
+	@Override
+	public String toString() {
+		return "UpcomingVehicle [isv=" + isv + ", models=" + models + ", count=" + count + "]";
+	}
+
+}

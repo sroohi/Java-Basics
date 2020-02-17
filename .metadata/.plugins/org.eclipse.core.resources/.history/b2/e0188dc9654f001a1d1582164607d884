@@ -1,0 +1,19 @@
+package com.school.main;
+
+import java.awt.GradientPaint;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.school.graduation.Graduation;
+
+public class MainApp {
+	public static void main(String[] args) {
+
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("context.xml");
+
+		Graduation g1 = (Graduation) ctx.getBean("grads");
+		System.out.println(g1.toString());
+	}
+
+}

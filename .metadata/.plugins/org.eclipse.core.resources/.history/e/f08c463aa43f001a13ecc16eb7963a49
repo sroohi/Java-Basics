@@ -1,0 +1,23 @@
+package collectionPackage;
+
+import java.util.LinkedHashSet;
+
+public class LinkedHashSetExample3 {
+	public static void main(String[] args) {
+		LinkedHashSet<LinkedHashSetExample2> info = new LinkedHashSet<LinkedHashSetExample2>();
+		LinkedHashSetExample2 s1 = new LinkedHashSetExample2(201, "Shawn", "Virginia", "5712698920");
+		LinkedHashSetExample2 s2 = new LinkedHashSetExample2(504, "Bill", "MD", "7035855698");
+		LinkedHashSetExample2 s3 = new LinkedHashSetExample2(815, "Marry", "Virginia", "2025524697");
+
+		info.add(s1);
+		info.add(s2);
+		info.add(s3);
+
+		for (LinkedHashSetExample2 l : info) {
+			System.out.println(l.id + "" + l.name + "" + l.address + "" + l.phone);
+
+		}
+
+	}
+
+}

@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="cusinf" class="com.customer.info.CustomerInfo">
+		<property name="customerId" value="2000"></property>
+		<property name="name" value="shawn roohi"></property>
+		<property name="account" ref="accInfo"></property>
+	</bean>
+
+	<bean id="accInfo" class="com.account.info.AccountInfo">
+		<property name="accountId" value="95957"></property>
+		<property name="email" value=sjhf@gmail.com></property>
+
+
+
+
+
+
+	</bean>
+
+
+
+
+
+</beans>

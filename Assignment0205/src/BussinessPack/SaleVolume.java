@@ -1,0 +1,37 @@
+package BussinessPack;
+
+public class SaleVolume {
+	private Store s;
+	private Float volume;
+	private Integer progress;
+
+	public Float getVolume() {
+		return volume;
+	}
+
+	public void setVolume(Float volume) {
+		this.volume = volume;
+	}
+
+	public Integer getProgress() {
+		return progress;
+	}
+
+	public void setProgress(Integer progress) {
+		this.progress = progress;
+	}
+
+	public Store getS() {
+		return s;
+	}
+
+	public void setS(Store s) {
+		this.s = s;
+	}
+
+	@Override
+	public String toString() {
+		return "SaleVolume [s=" + s + ", volume=" + volume + ", progress=" + progress + "]";
+	}
+
+}

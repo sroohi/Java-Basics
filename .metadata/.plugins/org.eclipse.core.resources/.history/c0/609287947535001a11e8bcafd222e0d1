@@ -1,0 +1,15 @@
+package coursesBasic;
+
+public class StringCapacityExample {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer();
+		System.out.println(sb.capacity());
+		
+		
+		sb.append("Hi My Name Is");
+		System.out.println(sb.capacity());
+		
+		
+	}
+
+}

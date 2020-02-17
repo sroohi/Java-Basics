@@ -1,0 +1,24 @@
+package com.abc.helper;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class InsertMainApp {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/dmv_1", "root",
+					"021051Sr!");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

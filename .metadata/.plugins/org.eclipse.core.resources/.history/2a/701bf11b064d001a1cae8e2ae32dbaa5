@@ -1,0 +1,12 @@
+package com.abc.helper;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class InsertMainApp {
+	public static void main(String[] args) throws Exception {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con= (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/dmv_1","root","021051Sr!");
+	}
+
+}

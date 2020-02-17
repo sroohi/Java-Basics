@@ -1,0 +1,28 @@
+package stringPackage;
+
+public class StringCharAtExample {
+
+	public static void main(String[] args) {
+
+		String abc = "Java Programming";
+		char a = abc.charAt(8);
+		System.out.println(a); // "g" is the 8th index
+
+		String str = "Shawn Roohi";
+		char b = str.charAt(3);
+		System.out.println(b);// "w" is the 3d index
+
+		String ab = "Java is the shit!";
+		int abLength = ab.length();
+		System.out.println("Character at 2nd index is:   " + ab.charAt(2));
+		System.out.println("Character at 6th index is:    " + ab.charAt(6));
+
+		String fgh = "I'm From Iran";
+		for (int i = 0; i < fgh.length() - 1; i++) {
+			if (i % 2 != 0) {
+				System.out.println("Char at " + i + "place " + fgh.charAt(i));
+			}
+		}
+	}
+
+}

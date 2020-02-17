@@ -1,0 +1,15 @@
+package stringPackage;
+
+public class StringEqualsExample {
+
+	public static void main(String[] args) {
+		String myName = "Shawn";
+		String myFirstName = "Shawn";
+		String myLastName = "Roohi";
+		String myNameCaps = "SHAWN";
+		System.out.println("++ " + myName.equals(myFirstName) + " ++");
+		System.out.println("*- " + myName.equals(myNameCaps) + " -*");
+		System.out.println("xx " + myFirstName.equals(myLastName) + " xx");
+	}
+
+}

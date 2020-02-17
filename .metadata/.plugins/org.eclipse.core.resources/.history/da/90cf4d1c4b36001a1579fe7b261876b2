@@ -1,0 +1,19 @@
+package stringPackage;
+
+public class StringContainExample {
+
+	public static void main(String[] args) {
+
+		String str = "I smoke Cigarettes";
+		System.out.println(str.contains(" - " + "smoke"));
+		System.out.println(str.contains(" - " + "pool"));
+
+		//
+		String str1 = "I like Cooking";
+		boolean isContains = str1.contains("Cooking");
+		System.out.println(isContains);
+		System.out.println(str1.contains("cooking"));
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package FirstSession;
+
+public class AdminstrationServices {
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.setId(5523234);
+		s.setName("Shawn Roohi");
+		System.out.println("ID  :" + s.getId());
+		System.out.println("Name  :" + s.getName());
+	}
+
+}

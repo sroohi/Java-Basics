@@ -1,0 +1,18 @@
+
+public class Test {
+	public static void main(String[] args) {
+		UberService a = new UberService();
+		Driver d = new Driver();
+		d.setDl(852852);
+		d.setName("Shawn");
+
+		Vehicle v = new Vehicle();
+		v.setMake(args);
+		v.getModel();
+
+		d.setV(v);
+		a.UberDriver(d);
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package excaptionHandlingPackage;
+
+public class TryCatchExample1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			int a = 350 / 0;
+			System.out.println(a);
+		} catch (ArithmeticException e) {
+			// if you don't know what kind of exception you're dealing with ,
+			// you can use catch(Exception e) because exception is the main
+			// class
+			System.out.println("!!You Can't Divide numbers by 0!!");
+		}
+
+		System.out.println("Hello There!");
+	}
+
+}

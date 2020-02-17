@@ -1,0 +1,17 @@
+package VehicleInventory;
+
+public class Test {
+	public static void main(String[] args) {
+		InventoryManagement im = new InventoryManagement();
+		UpcomingVehicle uv = new UpcomingVehicle();
+
+		InStockVehicle isv = new InStockVehicle();
+		isv.setLocation("West Virginia Warehouse");
+		isv.setDays(125);
+
+		uv.setIsv(isv);
+		im.shipping(uv);
+
+	}
+
+}

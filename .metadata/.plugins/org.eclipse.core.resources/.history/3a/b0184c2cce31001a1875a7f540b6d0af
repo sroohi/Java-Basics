@@ -1,0 +1,25 @@
+
+public class NonStaticMemberDemo {
+
+	int num;
+
+	NonStaticMemberDemo() {
+		System.out.println("Inside the constructor");
+	}
+
+	{
+		System.out.println("Inside the non statick block");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Inside the main method");
+		new NonStaticMemberDemo();
+		new NonStaticMemberDemo();
+
+	}
+
+	static {
+		System.out.println("Inside the static block");
+	}
+
+}

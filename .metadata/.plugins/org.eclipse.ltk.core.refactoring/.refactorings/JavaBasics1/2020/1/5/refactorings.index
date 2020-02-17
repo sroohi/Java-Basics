@@ -1,0 +1,12 @@
+1580006882867	Rename package 'superKeyword'
+1580072088039	Convert local variable 'c' to field
+1580072098232	Encapsulate field 'c'
+1580253883369	Delete element
+1580254624905	Delete element
+1580255121749	Delete elements
+1580256965681	Delete element
+1580258269810	Encapsulate field 'lastName'
+1580258278914	Encapsulate field 'creditCard'
+1580258677865	Encapsulate field 'id'
+1580258682334	Encapsulate field 'name'
+1580258687570	Encapsulate field 'ssn'

@@ -1,0 +1,9 @@
+
+public class Driver {
+
+	private String License;
+	private String Name;
+	private Integer Age;
+	private String Address;
+
+}

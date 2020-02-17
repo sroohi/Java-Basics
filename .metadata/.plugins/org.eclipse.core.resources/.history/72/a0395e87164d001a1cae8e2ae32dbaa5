@@ -1,0 +1,21 @@
+package com.abc.tables;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.abc.helper.DbUtility;
+
+public class JoinMainApp {
+
+	public static void main(String[] args) throws Exception {
+
+		Connection con = DbUtility.getConnection();
+		Statement stmt = con.createStatement();
+
+		String sql = "select order_id,order_date, 'Active' as status from orders where order_date >= '2019-01-01' union select order_id,order_date, 'Archived' as status from orders where order_date <= '2019-01-01'";
+		stmt.executeUpdate(sql);
+
+	}
+
+}

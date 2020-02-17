@@ -1,0 +1,24 @@
+package com.abc.helper;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class SelectMainApp {
+	public static void main(String[] args) throws Exception {
+
+		Connection con = DbUtility.getConnection();
+		Statement stmt = con.createStatement();
+
+		String sql = "select * from drivers";
+		ResultSet rs = stmt.executeQuery(sql);
+
+		while (rs.next()) {
+			int id = rs.getInt("driver_id");
+			String name = rs.getString("first_name") + " " + rs.getString("last_name");
+			System.out.println(id);
+			System.out.println(name);
+		}
+
+	}
+}

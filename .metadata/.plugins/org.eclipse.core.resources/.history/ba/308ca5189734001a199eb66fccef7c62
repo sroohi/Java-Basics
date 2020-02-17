@@ -1,0 +1,15 @@
+
+public class ArithmeticExpression {
+	public static void main(String[] args) {
+		int result = 10 + 3;
+		// int result = 10-3;
+		// int resukt = 10*3;
+		// deviding to whole numbers gives you a result of whole number!
+		// in order to have an accurate result you need to:
+		double dbl = (double) 10 / (double) 3;
+		System.out.println(result);
+		System.out.println(dbl);
+
+	}
+
+}

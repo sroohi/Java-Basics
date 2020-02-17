@@ -1,0 +1,21 @@
+package collectionPackage;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample {
+	public static void main(String[] args) {
+		Map<Integer, String> m = new HashMap<Integer, String>();
+		m.put(1, " Shawn");
+		m.put(2, " Roohi");
+		m.put(3, " Shawn Roohi");
+		m.put(4, " SHAWN ROOHI");
+
+		for (Map.Entry<Integer, String> map : m.entrySet()) {
+			System.out.println(map.getKey() + "" + map.getValue());
+
+		}
+
+	}
+
+}

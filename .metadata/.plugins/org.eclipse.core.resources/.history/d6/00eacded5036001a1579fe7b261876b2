@@ -1,0 +1,16 @@
+package stringPackage;
+
+public class StringFormatExample {
+
+	public static void main(String[] args) {
+		String product = "P-DS14";
+		String sf1 = String.format("Product :%s", product);
+		String sf2 = String.format("Price :%d", 499.99);
+		String sf3 = String.format("Sale Price %d", 399.99);
+
+		System.out.println(sf1);
+		System.out.println(sf2);
+		System.out.println(sf3);
+	}
+
+}

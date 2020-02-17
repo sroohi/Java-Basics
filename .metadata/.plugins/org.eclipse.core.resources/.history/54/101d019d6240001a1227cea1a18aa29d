@@ -1,0 +1,31 @@
+package collectionPackage;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExample {
+	public static void main(String[] args) {
+		HashMap<Integer, String> ab = new HashMap<Integer, String>();
+		System.out.println("WINE LIST-->" + ab);
+		ab.put(500, ": 70's wine");
+		ab.put(900, ": 80's wine");
+		ab.put(950, ": 90's wine");
+
+		for (Map.Entry a : ab.entrySet()) {
+			System.out.println(a.getKey() + "" + a.getValue());
+		}
+		ab.putIfAbsent(999, ": Bar's Choice");
+		for (Map.Entry a : ab.entrySet()) {
+			System.out.println(a.getKey() + "" + a.getValue());
+
+		}
+		HashMap<Integer, String> cd = new HashMap<Integer, String>();
+		cd.put(1000, ": Regular Wines");
+		cd.putAll(ab);
+		System.out.println("---------------");
+		for (Map.Entry a : cd.entrySet()) {
+			System.out.println(a.getKey() + "" + a.getValue());
+		}
+	}
+
+}

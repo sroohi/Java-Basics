@@ -1,0 +1,15 @@
+package Interfaces;
+
+public class DELLNoteBook implements TouchScreenLaptop {
+
+	@Override
+	public void click() {
+		System.out.println("DELLNoteBook Click");
+	}
+
+	@Override
+	public void scroll() {
+		System.out.println("DELLNoteBook scroll");
+	}
+
+}

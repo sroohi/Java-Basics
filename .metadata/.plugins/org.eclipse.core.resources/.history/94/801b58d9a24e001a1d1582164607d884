@@ -1,0 +1,20 @@
+package com.abc.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.abc.rab3.Driver;
+
+public class main {
+	public static void main(String[] args) {
+		
+		ApplicationContext ctx= new ClassPathXmlApplicationContext("app-context.xml");
+		
+		Driver d1=(Driver) ctx.getBean("driver1");
+		System.out.println(d1FF);
+		
+		
+	}
+	}
+
+}

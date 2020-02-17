@@ -1,0 +1,41 @@
+package collectionPackage;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetExample2 {
+	public static void main(String[] args) {
+
+		TreeSet<Integer> ab = new TreeSet<Integer>();
+		ab.add(150);
+		ab.add(180);
+		ab.add(985);
+		ab.add(4444);
+		ab.add(0005);
+
+		for (Integer abc : ab) {
+			System.out.println(abc);
+		}
+		System.out.println("-------------");
+		System.out.println(ab.pollFirst());
+		System.out.println(ab.pollLast());
+		System.out.println("-------------");
+		Iterator<Integer> bc = ab.descendingIterator();
+		while (bc.hasNext()) {
+			System.out.println(bc.next());
+		}
+		System.out.println("--------------");
+		System.out.println("Creating TreeSet with type String");
+		TreeSet<String> a1 = new TreeSet<String>();
+		a1.add("A");
+		a1.add("B");
+		a1.add("C");
+		a1.add("D");
+
+		System.out.println("Original Set  :" + a1);
+		System.out.println("Reverse Set  :" + a1.descendingSet());
+		System.out.println("Head Set  :" + a1.headSet("B", true));
+		System.out.println("Sub Set  :" + a1.subSet("A", true, "E", false));
+		System.out.println("Tail Set  :" + a1.tailSet("C", false));
+	}
+}

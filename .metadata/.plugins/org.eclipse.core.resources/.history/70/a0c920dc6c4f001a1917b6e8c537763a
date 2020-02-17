@@ -1,0 +1,60 @@
+package com.school.info;
+
+import java.util.Map;
+
+import com.school.graduation.Graduation;
+
+public class School {
+	private String schoolName;
+	private String schoolPhoneNo;
+	private String schoolAddress;
+	private Map<String, School> schoolAttenders;
+	private Graduation graduators;
+
+	public String getSchoolName() {
+		return schoolName;
+	}
+
+	public void setSchoolName(String schoolName) {
+		this.schoolName = schoolName;
+	}
+
+	public String getSchoolPhoneNo() {
+		return schoolPhoneNo;
+	}
+
+	public void setSchoolPhoneNo(String schoolPhoneNo) {
+		this.schoolPhoneNo = schoolPhoneNo;
+	}
+
+	public String getSchoolAddress() {
+		return schoolAddress;
+	}
+
+	public void setSchoolAddress(String schoolAddress) {
+		this.schoolAddress = schoolAddress;
+	}
+
+	public Graduation getGraduators() {
+		return graduators;
+	}
+
+	public void setGraduators(Graduation graduators) {
+		this.graduators = graduators;
+	}
+
+	public Map<String, School> getSchoolAttenders() {
+		return schoolAttenders;
+	}
+
+	public void setSchoolAttenders(Map<String, School> schoolAttenders) {
+		this.schoolAttenders = schoolAttenders;
+	}
+
+	@Override
+	public String toString() {
+		return "School [schoolName=" + schoolName + ", schoolPhoneNo=" + schoolPhoneNo + ", schoolAddress="
+				+ schoolAddress + ", schoolAttenders=" + schoolAttenders + ", graduators=" + graduators + "]";
+	}
+
+}

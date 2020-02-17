@@ -1,0 +1,14 @@
+package stringPackage;
+
+public class StringCompareToExample {
+
+	public static void main(String[] args) {
+		String firstname = "Shawn";
+		String firstname2 = "Shaun";
+		String firstname3 = "Sean";
+		String firstname4 = "Shauunn";
+		String firstname5 = "Adam";
+		System.out.println(firstname.compareTo(firstname2));
+	}
+
+}

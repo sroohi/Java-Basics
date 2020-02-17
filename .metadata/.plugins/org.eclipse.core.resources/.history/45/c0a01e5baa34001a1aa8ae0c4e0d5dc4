@@ -1,0 +1,10 @@
+package coursesBasic;
+
+public class SubString {
+	public static void main(String[] args) {
+		String s = "Never Give Up";
+		System.out.println(s.substring(0, 5));
+		System.out.println(6);
+	}
+
+}

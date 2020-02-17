@@ -1,0 +1,13 @@
+import java.util.Collection;
+import java.util.List;
+
+public class DriverFinder {
+	public Driver DriverByLicense(String License) {
+		return DMV.drivers.get(License);
+
+	}
+
+	public Collection<Driver> getAllDrivers() {
+		return DMV.drivers.values();
+	}
+}

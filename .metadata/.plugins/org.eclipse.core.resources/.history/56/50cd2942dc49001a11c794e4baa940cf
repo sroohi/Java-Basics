@@ -1,0 +1,18 @@
+package customerServicePack;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerFinder {
+
+	public Customer FindByID(String id) {
+		return customerService.list.get(id);
+
+	}
+
+	public List<Customer> AllCustomers() {
+		return new ArrayList<>(customerService.list.values());
+
+	}
+
+}

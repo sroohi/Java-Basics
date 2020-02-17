@@ -1,0 +1,54 @@
+package coursesBasic;
+
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
+public class IfElseExample {
+
+	public static void main(String[] args) {
+		// If Example
+		int age = 21;
+		if (age > 18) {
+			System.out.println("Age Must Be Greater Than 18");
+		}
+		System.out.println("-----------------");
+		// if-else example
+		int a = 15;
+		if (a * 2 == 30) {
+			System.out.println("The Answer is Correct!");
+		} else {
+			System.out.println("Try Again...");
+		}
+		System.out.println("-----------------");
+		int year = 2020;
+		if (((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))) {
+			System.out.println("LEAP YEAR");
+
+		} else {
+			System.out.println("COMMON YEAR");
+		}
+		System.out.println("----------------");
+		// if statement using Ternary Operator
+		int b = 15;
+		String output = (b % 2 == 0) ? "EVEN NUMBER" : "ODD NUMBER";
+		System.out.println(output);
+		System.out.println("---------------");
+		// if else if ladder
+		int c = 95;
+		if (c < 50) {
+			System.out.println("fail");
+		} else if (c >= 50 && c < 60) {
+			System.out.println("D Grade");
+		} else if (c >= 60 && c < 70) {
+			System.out.println("C Grade");
+		} else if (c >= 70 && c < 80) {
+			System.out.println("B Grade");
+		} else if (c >= 80 && c < 90) {
+			System.out.println("A Grade");
+		} else if (c >= 90 && c < 100) {
+			System.out.println("A+ Grade");
+		} else
+			System.out.println("!!!!INVALID!!!!");
+
+	}
+
+}

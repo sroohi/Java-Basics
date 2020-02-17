@@ -1,0 +1,12 @@
+package customerServicePack;
+
+import java.util.Map;
+
+public class customerService {
+	public static Map<String, Customer>list;
+	
+	public static void CustomerInfo(){
+		Cu
+	}
+
+}

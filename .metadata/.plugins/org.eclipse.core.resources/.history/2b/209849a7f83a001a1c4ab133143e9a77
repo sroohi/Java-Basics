@@ -1,0 +1,18 @@
+package threadsPackage;
+
+public class SynchronizedBlockExample {
+	void printingNumber(int s) {
+		synchronized (this) {
+			for (int n = 1; n <= 5; n++) {
+				System.out.println(s * n);
+				try {
+					Thread.sleep(15000);
+				} catch (Exception e) {
+					System.out.println(e);
+				}
+			}
+
+		}
+	}
+
+}

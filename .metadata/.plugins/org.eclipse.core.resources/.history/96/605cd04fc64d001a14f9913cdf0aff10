@@ -1,0 +1,29 @@
+package com.abc.tables;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.abc.tables.DbUtility;
+
+public class JoinMainApp {
+
+	public static void main(String[] args) throws Exception {
+
+		Connection con = DbUtility.getConnection();
+		Statement stmt = con.createStatement();
+
+		String sql = "Select* from orders o join customers c on o.customer_id=c.customer_id";
+		ResultSet rs = stmt.executeQuery(sql);
+
+		while (rs.next()) {
+			int id = rs.getInt("order_id") + rs.getInt("customer_id");
+			String name = rs.getString("first_name") + rs.getString("last_name");
+			System.out.println("ID  " + " " + id + "||" + "NAME  " + " " + name);
+		}
+		String sql1 = "ALTER TABLE `sql_store`.`customers` CHANGE COLUMN `phone` `phone_no` VARCHAR(50) NULL DEFAULT NULL";
+		ResultSet rs1 = stmt.executeUpdate(sql1);
+
+	}
+
+}

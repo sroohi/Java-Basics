@@ -1,0 +1,5 @@
+package ExceptionHandling;
+
+public class MyThredException extends Exception {
+
+}

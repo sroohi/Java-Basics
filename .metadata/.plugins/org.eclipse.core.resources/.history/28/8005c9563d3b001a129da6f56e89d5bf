@@ -1,0 +1,21 @@
+package threadsPackage;
+
+public class TestEmployee {
+	public static void main(String[] args) {
+		Employee e = new Employee();
+		new Thread() {
+			public void run() {
+				e.withdraw(55000);
+			}
+
+		}.start();
+		new Thread() {
+			public void run() {
+				e.deposit(85000);
+			}
+
+		}.start();
+
+	}
+
+}

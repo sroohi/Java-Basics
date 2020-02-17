@@ -1,0 +1,21 @@
+
+public class ArithmeticExpression {
+	public static void main(String[] args) {
+		int result = 10 + 3;
+		// int result = 10-3;
+		// int resukt = 10*3;
+		// deviding to whole numbers gives you a result of whole number!
+		// in order to have an accurate result you need to:
+		double dbl = (double) 10 / (double) 3;
+		System.out.println(result);
+		System.out.println(dbl);
+		int x = 1;// if you want to increase it by (1):
+		x++;// ++x is going to function the same way
+		System.out.println(x);
+		int y = x++;// in this case the value of x will get copied to Y so Y
+					// would be 1 then X will be incremented by 1
+		System.out.println(y);
+
+	}
+
+}

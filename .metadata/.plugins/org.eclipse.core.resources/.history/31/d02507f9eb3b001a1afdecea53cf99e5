@@ -1,0 +1,38 @@
+package collectionPackage;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayListExample {
+	public static void main(String[] args) {
+
+		ArrayList<String> a1 = new ArrayList<String>();
+		a1.add("Shawn");
+		a1.add("Roohi");
+		a1.add("Born in");
+		a1.add("Iran");
+		a1.add("Live in");
+		a1.add("USA");
+		// Printing Complete ArrayList:
+		System.out.println(a1);
+		System.out.println("---------");
+		// Iterating list with Iterator
+		Iterator<String> it = a1.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+		System.out.println("----------");
+		// For Each Loop
+		for (String obj : a1) {
+			System.out.println(obj);
+
+		}
+		System.out.println("---------");
+		// Adding Element(s) to the end of the list
+
+		a1.add(0, "A.K.A");
+		a1.add(0, "A.K.A");
+		System.out.println(a1);
+	}
+
+}

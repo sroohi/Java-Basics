@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="bigS" class="com.big.sean.BigSean">
+		<property name="height" value="6.3"></property>
+		<property name="weight" value="268"></property>
+		<property name="age" value="25"></property>
+		<property name="bigdick" ref="bigD"></property>
+
+	</bean>
+
+	<bean id="bigD" class="com.big.dick.BigDick">
+		<property name="name" value="Mr.Big Dick"></property>
+		<property name="size" value="60000"></property>
+
+	</bean>
+
+
+</beans>

@@ -1,0 +1,19 @@
+package coursesBasic;
+
+public class OperatorExample {
+	public static void main(String[] args) {
+		// Unary
+		int a = 10;
+		int b = 10;
+		System.out.println("--------------");
+		System.out.println(a++);
+		System.out.println(++a);
+		System.out.println(a--);
+		System.out.println(--a);
+		System.out.println("--------------");
+		System.out.println(a++ + ++a);
+		System.out.println(b++ + b++);
+		System.out.println("--------------");
+	}
+
+}

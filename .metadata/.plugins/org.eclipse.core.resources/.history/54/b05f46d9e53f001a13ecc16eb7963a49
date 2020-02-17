@@ -1,0 +1,5 @@
+package superKeyword;
+
+public class Child extends Parent {
+
+}

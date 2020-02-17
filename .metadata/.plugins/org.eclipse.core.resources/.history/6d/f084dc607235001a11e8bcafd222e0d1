@@ -1,0 +1,23 @@
+package coursesBasic;
+
+public class StringBufferExample {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("Hi My Name Is");
+
+		// StringBuffer append method Example//
+		sb.append(" Shawn");
+		sb.append(" Roohi");
+		System.out.println("- STRING BUFFER APPEND OUTPUT" + "\n" + sb);
+		// you can use any type of append
+
+		// StringBuffer insert method//
+		sb.insert(2, " everyone");
+		System.out.println("- STRING BUFFER INSERT OUTPUT" + "\n" + sb);
+
+		// StringBuffer replace method
+		sb.replace(0, 2, "Hello");
+		System.out.println("- STRING BUFFER REPLACE OUTPUT" + "\n" + sb);
+
+	}
+
+}

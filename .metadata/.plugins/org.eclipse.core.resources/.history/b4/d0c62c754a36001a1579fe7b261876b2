@@ -1,0 +1,12 @@
+package stringPackage;
+
+public class StringContainExample {
+
+	public static void main(String[] args) {
+
+		String str = "I smoke Cigarettes";
+		System.out.println(str.contains("smoke"));
+		System.out.println(str.contains("pool"));
+	}
+
+}

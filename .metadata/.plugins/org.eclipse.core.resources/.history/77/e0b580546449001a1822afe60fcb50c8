@@ -1,0 +1,16 @@
+package customerServicePack;
+
+import java.util.Map;
+
+public class customerService {
+	public static Map<String, Customer> list;
+
+	public static void CustomerInfo() {
+		Customer c = new Customer();
+		Customer c1 = new Customer();
+		Customer c2 = new Customer();
+		Customer c3 = new Customer();
+		Customer c4 = new Customer();
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.abc.tables;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.abc.helper.DbUtility;
+
+public class JoinMainApp {
+
+	public static void main(String[] args) throws Exception {
+
+		Connection con = DbUtility.getConnection();
+		Statement stmt = con.createStatement();
+
+		String sql = "Select* from orders o join customers c on o.customer_id=c.customer_id";
+		ResultSet rs = stmt.executeQuery(sql);
+
+		while (rs.next()) {
+			int id = rs.getInt("order_id") + rs.getInt("customer_id");
+			String name = rs.getString("first_name")  + rs.getString("last_name");
+			System.out.println(id + name);
+		}
+
+	}
+
+}

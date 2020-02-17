@@ -1,0 +1,18 @@
+package collectionPackage;
+
+import java.util.HashMap;
+
+public class HashMapRemoveExample {
+	public static void main(String[] args) {
+		HashMap<Integer, String> abc = new HashMap<Integer, String>();
+		abc.put(20, "$");
+		abc.put(59, "$");
+		abc.put(99, "$");
+		abc.put(599, "$");
+		System.out.println("Prices:  " + abc);
+		abc.remove(20);
+		System.out.println("Updated List:  " + abc);
+
+	}
+
+}

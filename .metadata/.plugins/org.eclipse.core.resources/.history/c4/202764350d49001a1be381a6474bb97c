@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Vehicle {
+	public static void main(String[] args) {
+		ArrayList<String> make = new ArrayList<String>();
+		make.add("Chevy");
+		make.add("Ford");
+		make.add("Cadilac");
+
+		Iterator<String> make1 = make.iterator();
+		while (make1.hasNext()) {
+			System.out.println(make1.next());
+			make1.remove();
+		}
+		ArrayList<String> model = new ArrayList<String>();
+		model.add("impala");
+		model.add("F150");
+		model.add("Escalade");
+
+		Iterator<String> model1 = model.iterator();
+
+		while (model1.hasNext()) {
+			System.out.println(model1.next());
+			model1.remove();
+		}
+		;
+
+	}
+
+}

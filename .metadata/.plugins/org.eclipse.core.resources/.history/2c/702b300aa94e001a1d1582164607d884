@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="customerinfo" class="com.customer.info.CustomerInfo">
+		<property name="customerId" value="c120"></property>
+		<property name="fistName" value="shawn"></property>
+		<property name="lastName" value="roohi"></property>
+		<property name="email" value="shawnroohi@gmail.com"></property>
+
+
+
+
+
+
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

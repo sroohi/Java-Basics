@@ -1,0 +1,20 @@
+package excaptionHandlingPackage;
+
+public class ExcaptionHandlingExample2 {
+	public static void main(String args[]) {
+		try {
+			int ab[] = { 10, 11, 12, 13, 14, 15, 16, 17, 18 };
+			ab[10] = 80 / 0;
+		} catch (ArithmeticException e) {
+			System.out.println("Arithmetic Exception occurs");
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("ArrayIndexOutOfBounds Exception occurs");
+		} catch (Exception e) {
+			System.out.println("Parent Exception occurs");
+		}
+		System.out.println("rest of the code");
+		System.out.println("Bye Now...");
+
+	}
+
+}

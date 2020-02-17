@@ -1,0 +1,22 @@
+package threadsPackage;
+
+public class ThreadSleepMethodExample extends Thread {
+	public void run() {
+		for (int a = 10; a < 20; a++) {
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(a);
+		}
+	}
+
+	public static void main(String[] args) {
+		ThreadSleepMethodExample t = new ThreadSleepMethodExample();
+		ThreadSleepMethodExample t1 = new ThreadSleepMethodExample();
+		t.start();
+		t1.start();
+	}
+
+}

@@ -1,0 +1,47 @@
+package customerServicePack;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class customerService {
+	public static Map<String, Customer> list = new HashMap<String, Customer>();
+
+	public static void CustomerInfo() {
+		Customer c = new Customer();
+		c.setName("Amir");
+		c.setId(520);
+		c.setAge(25);
+		c.setAddress("45 west road");
+
+		Customer c1 = new Customer();
+		c1.setName("Moe");
+		c1.setId(588);
+		c1.setAge(30);
+		c1.setAddress("52020 Candidate road");
+
+		Customer c2 = new Customer();
+		c2.setName("Joe");
+		c2.setId(8080);
+		c2.setAge(33);
+		c2.setAddress("2020 Heatherton ln");
+
+		Customer c3 = new Customer();
+		c3.setName("Noah");
+		c3.setId(1040);
+		c3.setAge(28);
+		c3.setAddress("4800 cornerside blvd");
+
+		Customer c4 = new Customer();
+		c4.setName("Jack");
+		c4.setId(1000);
+		c4.setAge(48);
+		c4.setAddress("6545 Kooka St.");
+		
+		list.put("100", c);
+		list.put("101", c1);
+		list.put("102", c2);
+		list.put("103", c3);
+		list.put("104", c4)
+	}
+
+}

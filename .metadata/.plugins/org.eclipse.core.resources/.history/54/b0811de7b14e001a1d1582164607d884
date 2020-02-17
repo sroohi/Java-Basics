@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="customer" class="com.customer.info.Customer">
+		<property name="customerId" value="50"></property>
+		<property name="name" value="Shawn Roohi"></property>
+
+
+
+	</bean>
+	<bean id="order" class="com.order.info.OrderInfo">
+		<property name="orderId" value="46845"></property>
+		<property name="productName" value="products"></property>
+
+
+
+	</bean>
+
+
+
+
+
+</beans>

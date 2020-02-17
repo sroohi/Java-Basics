@@ -1,0 +1,11 @@
+package customerServicePack;
+
+public class TestClass {
+	public static void main(String[] args) {
+		customerService.CustomerInfo();
+		CustomerFinder cf = new CustomerFinder();
+		customerService cs = new customerService();
+		Customer c = cf.FindByID("100");
+	}
+
+}

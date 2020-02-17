@@ -1,0 +1,21 @@
+package polyMorphism;
+
+public class RuneTimeBinding {
+
+	public static void main(String[] args) {
+		AppleLaptop m1 = new MacBookPro();
+		MacBook m2 = new MacBookAir();
+		// you can use either the class name or the interface!!
+
+		m1.start();
+		m1.shutdown();
+		m2.start();
+		m2.shutdown();
+		MacBookPro m3 = (MacBookPro) m1;// downcasting
+		m3.shutdown();
+		m3.start();
+		m3.prosmethod();
+
+	}
+
+}

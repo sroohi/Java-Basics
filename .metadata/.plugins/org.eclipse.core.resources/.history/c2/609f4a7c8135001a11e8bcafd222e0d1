@@ -1,0 +1,16 @@
+package coursesBasic;
+
+public class ToStringExample {
+
+	public String show() {
+
+		StringBuilder sb = new StringBuilder();
+
+		sb.append("Shawn");
+		sb.append(" Roohi.");
+
+		return sb.toString();
+
+	}
+
+}

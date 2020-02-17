@@ -1,0 +1,12 @@
+package coursesBasic;
+
+public class StringBufferExample {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("Hi My Name Is");
+		sb.append("Shawn");
+		sb.append("Roohi");
+		System.out.println(sb);
+
+	}
+
+}

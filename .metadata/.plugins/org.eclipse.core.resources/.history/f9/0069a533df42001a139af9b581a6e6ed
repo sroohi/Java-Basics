@@ -1,0 +1,11 @@
+package ExceptionHandling;
+
+public class AssertDemo {
+	public static void main(String[] args) {
+		int withdrawalAmount = 100;
+		int currentBalance = 100;
+		assert (withdrawalAmount < currentBalance);
+
+	}
+
+}

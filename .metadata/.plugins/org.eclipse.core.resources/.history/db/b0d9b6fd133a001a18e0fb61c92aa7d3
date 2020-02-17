@@ -1,0 +1,14 @@
+package coursesBasic;
+
+public class IfElseExample {
+
+	public static void main(String[] args) {
+		// If Example
+		int age = 21;
+		if (age < 18) {
+			System.out.println("Age Must Be Greater Than 18");
+		}
+
+	}
+
+}

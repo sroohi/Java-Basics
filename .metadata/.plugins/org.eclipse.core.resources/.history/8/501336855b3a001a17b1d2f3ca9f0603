@@ -1,0 +1,28 @@
+package excaptionHandlingPackage;
+
+public class ExceptionPropagationExample {
+	void a() {
+		int s = 150 / 0;
+	}
+
+	void b() {
+		a();
+	}
+
+	void c() {
+		try {
+			b();
+		} catch (ArithmeticException e) {
+			System.out.println("++" + "Exception Handled" + "++");
+		}
+	}
+		public static void main(String[]args){
+			ExceptionPropagationExample obj=new ExceptionPropagationExample();
+			obj.c();
+			System.out.println("Rest of the Code...");
+			
+			
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+package collectionPackage;
+
+import java.util.TreeSet;
+
+public class TreeSetExample2 {
+	public static void main(String[] args) {
+
+		TreeSet<Integer> ab = new TreeSet<Integer>();
+		ab.add(150);
+		ab.add(180);
+		ab.add(985);
+		ab.add(4444);
+		ab.add(0005);
+		System.out.println(ab.pollFirst());
+		System.out.println(ab.pollLast());
+		}
+	}
+
+}

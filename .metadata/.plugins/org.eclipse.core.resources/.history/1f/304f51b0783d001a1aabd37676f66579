@@ -1,0 +1,32 @@
+package collectionPackage;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class ListIteratorImplementation {
+	public static void main(String[] args) {
+		// creating list of ListIteratorExample
+		List<ListIteratorExample> list = new ArrayList<ListIteratorExample>();
+		ListIteratorExample l1 = new ListIteratorExample(201, " Shawn", " 5885", " 5712698920");
+		ListIteratorExample l2 = new ListIteratorExample(444, " Josh", " 8133", " 7035225569");
+		ListIteratorExample l3 = new ListIteratorExample(520, " Matt", " 6521", " 5714589620");
+		ListIteratorExample l4 = new ListIteratorExample(895, " Misha", " 5874", " 7032569874");
+
+		list.add(l1);
+		list.add(l2);
+		list.add(l3);
+		list.add(l4);
+		for (ListIteratorExample l : list) {
+			System.out.println(l.id + "" + l.name + "" + l.address + "" + l.phone);
+
+		}
+		ListIterator<ListIteratorExample> it = list.listIterator();
+		System.out.println("Reverese Iterator");
+		while (it.hasPrevious()) {
+			System.out.println(it.previous());
+		}
+
+	}
+
+}

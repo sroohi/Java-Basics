@@ -1,0 +1,22 @@
+package coursesBasic;
+
+public class VariableExamples {
+	public static void main(String args[]) {
+		// Add Two Numbers
+		int a = 10;
+		int b = 15;
+		int c = a + b;
+		System.out.println("The Answer Is    :" + c);
+		// Widening
+		int a1 = 10;
+		float b1 = a1;
+		System.out.println(" Value is   :" + a1);
+		System.out.println(" Valye is   :" + b1);
+		// Narrowing
+		float c1 = 11.45f;
+		int c2 = (int) c1;
+		System.out.println("The Value is   :" + c1);
+		System.out.println("The Value is   :" + c2);
+	}
+
+}

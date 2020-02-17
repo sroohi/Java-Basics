@@ -1,0 +1,33 @@
+package customerServicePack;
+
+import java.util.List;
+
+public class TestClass {
+	public static void main(String[] args) {
+
+		customerService.CustomerInfo();
+
+		CustomerFinder cf = new CustomerFinder();
+
+		customerService cs = new customerService();
+
+		System.out.println("Selectede Customers are  :");
+		System.out.println("");
+
+		Customer c = cf.FindByID("100");
+		Customer cc = cf.FindByID("101");
+		Customer ccc = cf.FindByID("103");
+
+		System.out.println(c.toString());
+		System.out.println(cc.toString());
+		System.out.println(ccc.toString());
+		System.out.println("------------");
+
+		List<Customer> clist = cf.AllCustomers();
+		for (Customer c1 : customerService.list.values()) {
+			System.out.println(c1.toString());
+		}
+		System.out.println("---------");
+	}
+
+}

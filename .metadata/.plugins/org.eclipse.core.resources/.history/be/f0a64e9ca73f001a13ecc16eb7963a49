@@ -1,0 +1,31 @@
+package collectionPackage;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetExample {
+	public static void main(String[] args) {
+		TreeSet<String> ab = new TreeSet<String>();
+
+		ab.add("Shawn");
+		ab.add("Class");
+		ab.add("Core Java");
+		ab.add("Student");
+
+		try {
+
+			ab.add(null);
+
+		} catch (Exception e) {
+			System.out.println("Can't use Null Value...");
+		}
+
+		for (String obj : ab) {
+			System.out.println(obj);
+		}
+		// Traversing element into descending order:
+		Iterator<String> it = ab.descendingIterator();
+
+	}
+
+}

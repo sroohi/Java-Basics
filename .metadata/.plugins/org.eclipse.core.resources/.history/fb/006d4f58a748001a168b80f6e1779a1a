@@ -1,0 +1,14 @@
+package SubcribtionPack;
+
+public class Test {
+	public static void main(String[] args) {
+		OnlineSupportTeam ost = new OnlineSupportTeam();
+		Subscribers sc = new Subscribers();
+		sc.setName("Customer");
+		sc.setOnlineId(2210050);
+		ost.monthlyPayment(sc);
+		sc.getName();
+		sc.getOnlineId();
+	}
+
+}

@@ -1,0 +1,10 @@
+package customerServicePack;
+
+public class CustomerFinder {
+
+	public Customer FindByID(String id) {
+		return customerService.list.get(id);
+
+	}
+
+}
